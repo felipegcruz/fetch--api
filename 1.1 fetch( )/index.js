@@ -25,7 +25,7 @@ catchRainbow()
     })
 
 async function catchRainbow() {
-    const response = await fetch('rainbow.jpg');
+    const response = await fetch('https://images.unsplash.com/photo-1500042600524-37ecb686c775?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
     const blob = await response.blob();
     document.getElementById('rainbow').src = URL.createObjectURL(blob);
 }
